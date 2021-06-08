@@ -1,0 +1,16 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: member-9001
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848       # 服务注册地址
+      config:
+        server-addr: localhost:8848       # 服务配置中心
+        file-extension: yml               # 配置中心的文件后缀，默认是 properties
+feign:
+  httpclient:
+    connection-timeout: 5000              # 连接超时
+    connection-timer-repeat: 1500         # 连接重试的时间
