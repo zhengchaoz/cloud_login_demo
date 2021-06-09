@@ -14,3 +14,6 @@ feign:
   httpclient:
     connection-timeout: 5000              # 连接超时
     connection-timer-repeat: 1500         # 连接重试的时间
+logging:
+  file:
+    path: login/zhengchao.log

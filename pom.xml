@@ -10,6 +10,7 @@
     <modules>
         <module>login_modules</module>
         <module>login_gateway</module>
+        <module>login_api</module>
     </modules>
 
     <packaging>pom</packaging>

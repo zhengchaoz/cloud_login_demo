@@ -1,5 +1,6 @@
 package com.zheng.controller;
 
+import com.zheng.annotation.RequiredLog;
 import com.zheng.feign.RemoteNoticeService;
 import com.zheng.pojo.LoginVo;
 import com.zheng.pojo.Member;
@@ -33,9 +34,9 @@ public class MemberController {
 //        return "register ok";
     }
 
+    @RequiredLog
     @PostMapping("/login")
     public String doLogin(@RequestBody LoginVo loginVo) {
-        System.out.println(loginVo);
         return "login ok";
     }
 }
